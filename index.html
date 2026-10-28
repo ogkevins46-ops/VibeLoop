@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080B14">
+  <meta name="description" content="VibeLoop — Create. Connect. Belong.">
+  <title>VibeLoop — Create. Connect. Belong.</title>  <style>
+    :root {
+      --background: #080B14;
+      --surface: #101625;
+      --purple: #8B5CF6;
+      --cyan: #22D3EE;
+      --text: #F5F7FF;
+      --muted: #B8C1D8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background:
+        radial-gradient(ellipse at 50% 20%, #332064 0%, transparent 48%),
+        var(--background);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    .welcome {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 24px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #8B5CF6;
+      border-radius: 28px;
+      background: linear-gradient(145deg, #8B5CF6, #43218F);
+      box-shadow: 0 0 45px #8B5CF644;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 10vw, 52px);
+      font-weight: 800;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: var(--purple);
+    }
+
+    .tagline {
+      margin: 12px 0 16px;
+      color: var(--muted);
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    .intro {
+      max-width: 340px;
+      margin: 0 auto 32px;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .actions {
+      display: grid;
+      gap: 14px;
+    }
+
+    .button {
+      width: 100%;
+      min-height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      font: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    .button:active {
+      transform: scale(0.98);
+    }
+
+    .primary {
+      border: 0;
+      color: white;
+      background: linear-gradient(100deg, var(--purple), #7044E8);
+      box-shadow: 0 8px 28px #8B5CF633;
+    }
+
+    .secondary {
+      border: 1px solid #343D55;
+      color: var(--text);
+      background: #101625CC;
+    }
+
+    .footer {
+      margin-top: 32px;
+      color: #7F8AA5;
+      font-size: 12px;
+    }
+
+    @media (min-width: 700px) {
+      body {
+        padding: 40px;
+      }
+
+      .welcome {
+        max-width: 460px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
+  </style></head><body>
+  <main class="welcome">
+    <div class="logo" aria-label="VibeLoop wave logo">〰</div><h1>Vibe<span>Loop</span></h1>
+
+<p class="tagline">Create. Connect. Belong.</p>
+
+<p class="intro">
+  Your world to create, discover, share moments,
+  and connect with people who share your vibe.
+</p>
+
+<div class="actions">
+  <a class="button primary" href="#signup">Get Started — Sign Up</a>
+  <a class="button secondary" href="#signin">I Already Have an Account</a>
+</div>
+
+<p class="footer">
+  Your world. Your people. Your vibe.
+</p>
+
+  </main>
+</body>
+</html>
